@@ -13,11 +13,11 @@ export const useStructuredData = (profile) => {
       "jobTitle": profile.title || "Full Stack Developer",
       "description": profile.bio || "",
       "url": "https://utkusen.com.tr",
-      "email": profile.email || "iletisim@utkusen.com.tr",
+      "email": profile.email || "utkusen9@gmail.com",
       "sameAs": [
-        profile.github || "https://github.com/utkusen",
-        profile.linkedin || "https://linkedin.com/in/utkusen",
-        profile.twitter || "https://twitter.com/utkusen"
+        profile.github || "https://github.com/utkyfact",
+        profile.linkedin || "https://linkedin.com/in/utkyfact",
+        profile.twitter || "https://twitter.com/utkyfact"
       ],
       "knowsAbout": [
         "Python",
