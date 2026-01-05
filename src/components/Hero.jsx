@@ -101,8 +101,8 @@ const Hero = () => {
             <div className="container-custom relative z-10">
                 <div className="text-center">
                     <div className="slide-up">
-                        <h1 className="mb-4 text-5xl md:text-7xl font-bold">
-                            Merhaba, Ben <span style={{ color: 'var(--space-cyan)' }}>{profile.name}</span>
+                        <h1 className="mb-4 text-5xl md:text-7xl font-bold text-white-50">
+                            Hello, I'm <span style={{ color: 'var(--space-cyan)' }}>{profile.name}</span>
                         </h1>
                     </div>
 
@@ -123,13 +123,13 @@ const Hero = () => {
                             href="#projects"
                             className="btn-space w-64 h-14 flex items-center justify-center text-lg font-semibold rounded-xl"
                         >
-                            Projelerimi İncele
+                            View My Projects
                         </a>
                         <a
                             href="#about"
                             className="glass-space w-64 h-14 flex items-center justify-center font-semibold hover:bg-white/10 transition-all text-lg rounded-xl"
                         >
-                            Hakkımda
+                            About Me
                         </a>
                     </div>
 

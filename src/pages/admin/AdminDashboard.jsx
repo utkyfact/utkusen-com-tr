@@ -18,7 +18,7 @@ const AdminDashboard = () => {
                 <div className="grid md:grid-cols-3 gap-6 mb-8">
                     <div className="glass-space p-6 slide-up delay-100 rounded-2xl">
                         <div className="flex items-center justify-between mb-4">
-                            <h3 className="text-lg font-semibold text-white">Toplam Proje</h3>
+                            <h3 className="text-lg font-semibold text-white">Total Projects</h3>
                             <div className="w-12 h-12 bg-purple-500/20 rounded-lg flex items-center justify-center">
                                 <svg className="w-6 h-6 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
@@ -30,26 +30,26 @@ const AdminDashboard = () => {
 
                     <div className="glass-space p-6 slide-up delay-200 rounded-2xl">
                         <div className="flex items-center justify-between mb-4">
-                            <h3 className="text-lg font-semibold text-white">Profil Durumu</h3>
+                            <h3 className="text-lg font-semibold text-white">Profile Status</h3>
                             <div className="w-12 h-12 bg-blue-500/20 rounded-lg flex items-center justify-center">
                                 <svg className="w-6 h-6 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                                 </svg>
                             </div>
                         </div>
-                        <p className="text-lg font-semibold text-green-400">Aktif</p>
+                        <p className="text-lg font-semibold text-green-400">Active</p>
                     </div>
 
                     <div className="glass-space p-6 slide-up delay-300 rounded-2xl">
                         <div className="flex items-center justify-between mb-4">
-                            <h3 className="text-lg font-semibold text-white">Son Güncelleme</h3>
+                            <h3 className="text-lg font-semibold text-white">Last Update</h3>
                             <div className="w-12 h-12 bg-pink-500/20 rounded-lg flex items-center justify-center">
                                 <svg className="w-6 h-6 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                                 </svg>
                             </div>
                         </div>
-                        <p className="text-lg font-semibold text-white">Bugün</p>
+                        <p className="text-lg font-semibold text-white">Today</p>
                     </div>
                 </div>
 
@@ -62,14 +62,14 @@ const AdminDashboard = () => {
                                 </svg>
                             </div>
                             <div>
-                                <h3 className="text-xl font-bold text-white">Profil Yönetimi</h3>
-                                <p className="text-white/60">Kişisel bilgilerinizi düzenleyin</p>
+                                <h3 className="text-xl font-bold text-white">Profile Management</h3>
+                                <p className="text-white/60">Edit your personal information</p>
                             </div>
                         </div>
                         <div className="mt-4">
-                            <p className="text-white/70 mb-2">İsim: {profile.name}</p>
-                            <p className="text-white/70 mb-2">Unvan: {profile.title}</p>
-                            <p className="text-white/70">E-posta: {profile.email}</p>
+                            <p className="text-white/70 mb-2">Name: {profile.name}</p>
+                            <p className="text-white/70 mb-2">Title: {profile.title}</p>
+                            <p className="text-white/70">Email: {profile.email}</p>
                         </div>
                     </Link>
 
@@ -81,13 +81,13 @@ const AdminDashboard = () => {
                                 </svg>
                             </div>
                             <div>
-                                <h3 className="text-xl font-bold text-white">Proje Yönetimi</h3>
-                                <p className="text-white/60">Projelerinizi ekleyin ve düzenleyin</p>
+                                <h3 className="text-xl font-bold text-white">Project Management</h3>
+                                <p className="text-white/60">Add and edit your projects</p>
                             </div>
                         </div>
                         <div className="mt-4">
-                            <p className="text-white/70 mb-2">Toplam Proje: {projects.length}</p>
-                            <p className="text-white/70">Son proje eklendiğinde gösterilir</p>
+                            <p className="text-white/70 mb-2">Total Projects: {projects.length}</p>
+                            <p className="text-white/70">Shown when last project is added</p>
                         </div>
                     </Link>
                 </div>

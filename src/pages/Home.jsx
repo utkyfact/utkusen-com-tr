@@ -3,9 +3,15 @@ import Navbar from '../components/Navbar';
 import Hero from '../components/Hero';
 import About from '../components/About';
 import Projects from '../components/Projects';
+import { useData } from '../context/DataContext';
+import { useStructuredData } from '../utils/seo';
 
 const Home = () => {
     const [scrollY, setScrollY] = useState(0);
+    const { profile } = useData();
+
+    // Add structured data for SEO
+    useStructuredData(profile);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -30,7 +36,7 @@ const Home = () => {
     const backgroundStars = generateBackgroundStars(150);
 
     return (
-        <div className="min-h-screen relative">
+        <div className="min-h-screen relative overflow-x-hidden">
             {/* Sabit Uzay Arka Planı */}
             <div className="fixed inset-0 pointer-events-none" style={{ zIndex: 0 }}>
                 {/* Arka Plan Yıldızları */}
@@ -95,7 +101,7 @@ const Home = () => {
                 <footer className="py-8 border-t border-white/10">
                     <div className="container-custom text-center">
                         <p className="text-white/60">
-                            © {new Date().getFullYear()} Portfolio. Tüm hakları saklıdır.
+                            © {new Date().getFullYear()} Portfolio. All rights reserved.
                         </p>
                     </div>
                 </footer>

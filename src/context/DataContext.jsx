@@ -12,10 +12,10 @@ export const useData = () => {
 
 export const DataProvider = ({ children }) => {
     const [profile, setProfile] = useState({
-        name: 'Utku Şen',
-        title: 'Full Stack Developer & Web Tasarımcı',
-        bio: 'Modern web teknolojileri konusunda uzmanlaşmış, tutkulu bir yazılım geliştiriciyim. Kullanıcı deneyimini ön planda tutan, estetik ve işlevsel web uygulamaları geliştiriyorum. React, Node.js ve modern JavaScript ekosistemi ile çalışmayı seviyorum.',
-        email: 'iletisim@utkusen.com.tr',
+        name: 'Utku Sen',
+        title: 'Full Stack Developer',
+        bio: 'A passionate software developer specialized in modern web technologies. I build aesthetic and functional web applications that prioritize user experience. I love working with Python, Node.js, PHP, and React.',
+        email: 'contact@utkusen.com.tr',
         github: 'https://github.com/utkusen',
         linkedin: 'https://linkedin.com/in/utkusen',
         twitter: 'https://twitter.com/utkusen'
@@ -24,8 +24,8 @@ export const DataProvider = ({ children }) => {
     const [projects, setProjects] = useState([
         {
             id: 1,
-            title: 'E-Ticaret Platformu',
-            description: 'Modern tasarım prensiplerine uygun, kullanıcı dostu arayüze sahip tam kapsamlı bir e-ticaret çözümü. Sepet yönetimi, ödeme entegrasyonu ve admin paneli ile birlikte gelir.',
+            title: 'E-Commerce Platform',
+            description: 'A comprehensive e-commerce solution with a user-friendly interface following modern design principles. Includes shopping cart management, payment integration, and admin panel.',
             technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'Tailwind CSS'],
             link: 'https://example.com',
             github: 'https://github.com/utkusen/ecommerce-platform',
@@ -33,8 +33,8 @@ export const DataProvider = ({ children }) => {
         },
         {
             id: 2,
-            title: 'Proje Yönetim Sistemı',
-            description: 'Ekiplerin projelerini kolayca yönetebileceği, kanban board ve zaman takibi özellikleri içeren kurumsal çözüm. Real-time güncellemeler ve bildirim sistemi mevcuttur.',
+            title: 'Project Management System',
+            description: 'An enterprise solution for teams to easily manage their projects, featuring kanban boards and time tracking. Includes real-time updates and notification system.',
             technologies: ['Vue.js', 'Firebase', 'Vuex', 'Socket.io', 'Bootstrap'],
             link: 'https://example.com',
             github: 'https://github.com/utkusen/project-management',
@@ -43,7 +43,7 @@ export const DataProvider = ({ children }) => {
         {
             id: 3,
             title: 'Blog & Portfolio CMS',
-            description: 'Kişisel blog ve portfolio sitesi oluşturmak isteyenler için geliştirilmiş içerik yönetim sistemi. SEO optimizasyonu ve responsive tasarım ile birlikte gelir.',
+            description: 'A content management system developed for those who want to create personal blog and portfolio sites. Comes with SEO optimization and responsive design.',
             technologies: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'TailwindCSS'],
             link: 'https://example.com',
             github: 'https://github.com/utkusen/blog-portfolio-cms',

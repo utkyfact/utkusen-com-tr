@@ -5,7 +5,7 @@ const About = () => {
     const { profile } = useData();
 
     return (
-        <section id="about" className="section-spacing relative">
+        <section id="about" className="section-spacing relative overflow-x-hidden">
             {/* Kuyruklu Yıldız - About için */}
             <div className="absolute inset-0 pointer-events-none overflow-hidden">
                 <div className="comet" style={{ top: '50%', animationDelay: '5s' }}></div>
@@ -13,16 +13,16 @@ const About = () => {
 
             <div className="container-custom relative z-10">
                 <div className="text-center mb-16 slide-up">
-                    <h2 className="mb-4 text-4xl md:text-5xl font-bold" style={{ color: 'var(--space-cyan)' }}>Hakkımda</h2>
+                    <h2 className="mb-4 text-4xl md:text-5xl font-bold" style={{ color: 'var(--space-cyan)' }}>About Me</h2>
                     <p className="text-xl text-white/70 max-w-2xl mx-auto">
-                        Tutkulu bir yazılım geliştiricisi olarak modern web teknolojileri ile çalışıyorum
+                        As a passionate software developer, I work with modern web technologies
                     </p>
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-12 items-stretch">
                     <div className="slide-in-left h-full">
                         <div className="glass-space p-8 h-full flex flex-col rounded-2xl">
-                            <h3 className="text-2xl font-bold mb-6 text-white border-b border-white/10 pb-4">Profil Bilgileri</h3>
+                            <h3 className="text-2xl font-bold mb-6 text-white border-b border-white/10 pb-4">Profile Information</h3>
                             <div className="space-y-6 flex-grow">
                                 <div className="flex items-center gap-4">
                                     <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center">
@@ -31,7 +31,7 @@ const About = () => {
                                         </svg>
                                     </div>
                                     <div>
-                                        <p className="text-white/40 text-xs uppercase tracking-wider">Ad Soyad</p>
+                                        <p className="text-white/40 text-xs uppercase tracking-wider">Full Name</p>
                                         <p className="text-white font-medium text-lg">{profile.name}</p>
                                     </div>
                                 </div>
@@ -42,7 +42,7 @@ const About = () => {
                                         </svg>
                                     </div>
                                     <div>
-                                        <p className="text-white/40 text-xs uppercase tracking-wider">Unvan</p>
+                                        <p className="text-white/40 text-xs uppercase tracking-wider">Title</p>
                                         <p className="text-white font-medium text-lg">{profile.title}</p>
                                     </div>
                                 </div>
@@ -53,7 +53,7 @@ const About = () => {
                                         </svg>
                                     </div>
                                     <div>
-                                        <p className="text-white/40 text-xs uppercase tracking-wider">E-posta</p>
+                                        <p className="text-white/40 text-xs uppercase tracking-wider">Email</p>
                                         <a href={`mailto:${profile.email}`} className="text-white font-medium text-lg hover:text-purple-400 transition-colors">
                                             {profile.email}
                                         </a>
@@ -65,7 +65,7 @@ const About = () => {
 
                     <div className="slide-in-right h-full">
                         <div className="glass-space p-8 h-full flex flex-col rounded-2xl">
-                            <h3 className="text-2xl font-bold mb-6 text-white border-b border-white/10 pb-4">Biyografi</h3>
+                            <h3 className="text-2xl font-bold mb-6 text-white border-b border-white/10 pb-4">Biography</h3>
                             <p className="text-white/80 leading-relaxed text-lg flex-grow">
                                 {profile.bio}
                             </p>
@@ -85,7 +85,7 @@ const About = () => {
                                     href={profile.linkedin}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="flex-1 glass-space px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition-all flex items-center justify-center gap-2 group"
+                                    className="flex-1 glass-space text-white-50 px-6 py-3 rounded-xl font-semibold hover:bg-white/10 transition-all flex items-center justify-center gap-2 group"
                                 >
                                     <svg className="w-5 h-5 opacity-90 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24">
                                         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
